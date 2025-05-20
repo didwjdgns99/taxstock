@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>택스톡</title>
+  <!-- ---------파비콘--------------- -->
+  <link  rel= "apple-touch-icon"  크기= "57x57"  href= "./img/apple-icon-57x57.png" > 
+<link  rel= "apple-touch-icon"  크기= "60x60"  href= "./img/apple-icon-60x60.png" > 
+<link  rel= "apple-touch-icon"  크기= "72x72"  href= "./img/apple-icon-72x72.png" > 
+<link  rel= "apple-touch-icon"  크기= "76x76"  href= "./img/apple-icon-76x76.png" > 
+<link  rel= "apple-touch-icon"  크기= "114x114"  href= "./img/apple-icon-114x114.png" > 
+<link  rel= "apple-touch-icon"  크기= "120x120"  href= "./img/apple-icon-120x120.png" > 
+<link  rel= "apple-touch-icon"  크기= "144x144"  href= "./img/apple-icon-144x144.png" > 
+<link  rel= "apple-touch-icon"  크기= "152x152"  href= "./img/apple-icon-152x152.png" > 
+<link  rel= "apple-touch-icon"  크기= "180x180"  href= "./img/apple-icon-180x180.png" > 
+<link  rel= "icon"  유형= "image/png"  크기= "192x192"   href= "./img/android-icon-192x192.png" > 
+<link  rel= "icon"  유형= "image/png"  크기= "32x32"  href= "./img/favicon-32x32.png" > 
+<link  rel= "icon"  유형= "image/png"  크기= "96x96"  href= "./img/favicon-96x96.png" > 
+<link  rel= "icon"  type= "image/png"  sizes= "16x16"  href= "./img/favicon-16x16.png" > 
+<link  rel= "manifest"  href= "./manifest.json" > 
+  <!-- ----스타일---- -->
+  <link rel="stylesheet" href="./style.css">
+  <!-- ---------aos연결------ -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  <!-- ---------swiper연결------ -->
+  <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  <!-- --------폰트적용--------- -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/Pretendard/dist/web/static/pretendard.css" />
+  <link href="https://webfontworld.github.io/gmarket/GmarketSans.css" rel="stylesheet" />
+</head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://kit.fontawesome.com/1a425518fe.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="main.js"></script>
+<body>
+  <div class="wrap">
+              <div class="overlay"></div>
+    <div class="stockby">
+      <div class="stockby_img">
+        <video src="./img/stockby.webm" autoplay loop muted></video>
+      </div>
+      <div class="stockby_txt"><span>챗봇상담</span></div>
+    </div>
+    <!-- --------------------헤더영역-------------------- -->
+    <div class="header">
+      <div class="head_logo">
+        <a href="#none" class="logo">
+          <img src="./img/logo.png" alt="택스톡">
+          <span>택스톡</span>
+        </a>
+      </div>
+      <div class="head_list">
+        <ul>
+          <li><a href="#none">상품</a>
+            <ul class="sub_menu menu_01">
+              <li>
+                <a href="#none"><span>상품 목록</span></a>
+                <a href="#none"><span>청약 가이드</span></a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#none">매거진</a>
+            <ul class="sub_menu menu_02">
+              <li>
+                <a href="#none"><span>포트폴리오</span></a>
+                <a href="#none"><span>인사이트 칼럼</span></a>
+                <a href="#none"><span>어바웃 트렌드</span></a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#none">공시</a>
+            <ul class="sub_menu menu_03">
+              <li>
+                <a href="#none"><span>투자 공시</span></a>
+                <a href="#none"><span>경영 공시</span></a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#none">고객센터</a>
+            <ul class="sub_menu menu_04">
+              <li>
+                <a href="#none"><span>고객센터</span></a>
+                <a href="#none"><span>FAQ</span></a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#none">TaxStock</a>
+            <ul class="sub_menu menu_05">
+              <li>
+                <a href="#none"><span>Business</span></a>
+                <a href="#none"><span>Press</span></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="search-box">
+      <div class="search-box-inner">
+      <input type="text" placeholder="검색어를 입력하세요" />
+      <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+
+
+      </div>
+      
+      <div class="head_btn">
+        <a href="#none">
+          <img src="./img/kakao_img.png" alt="">
+          <span>카카오톡 간편가입</span>
+        </a>
+      </div>
+
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+
+      <div class="m_sub_list">
+  <ul>
+    <li>
+      <div class="category-header">
+        <span>상품</span>
+        <i class="fa-solid fa-angles-down"></i>
+      </div>
+      <ul class="subcategory">
+        <li>상품 목록</li>
+        <li>청약 가이드</li>
+      </ul>
+    </li>
+    <li>
+      <div class="category-header">
+        <span>매거진</span>
+        <i class="fa-solid fa-angles-down"></i>
+      </div>
+      <ul class="subcategory">
+        <li>포트폴리오</li>
+        <li>인사이트 칼럼</li>
+      </ul>
+    </li>
+    <li>
+      <div class="category-header">
+        <span>공시</span>
+        <i class="fa-solid fa-angles-down"></i>
+      </div>
+      <ul class="subcategory">
+        <li>투자 공시</li>
+        <li>경영 공시</li>
+      </ul>
+    </li>
+    <li>
+      <div class="category-header">
+        <span>고객센터</span>
+        <!-- <i class="fa-solid fa-angles-down"></i> -->
+      </div>
+      <!-- <ul class="subcategory">
+        <li>서브카테고리 4-1</li>
+        <li>서브카테고리 4-2</li>
+      </ul> -->
+    </li>
+    <li>
+      <div class="category-header">
+        <span>TaxStock</span>
+        <i class="fa-solid fa-angles-down"></i>
+      </div>
+      <ul class="subcategory">
+        <li>Business</li>
+        <li>Press</li>
+      </ul>
+    </li>
+  </ul>
+      </div>
+
+      <div class="overlay"></div>
+
+
+      </div>
+
+
+    <div class="main">
+      <div class="main_section">
+        <div class="l_cul">
+          <div class="l_cul_01">
+            <div class="main_title_img">
+              <img src="./img/taxstock.png" alt="택스톡 타이틀 이미지">
+            </div>
+          </div>
+          <div class="l_cul_02">
+            <div class="l_cul_02_img">
+              <img src="./img/tax_3d.png" alt="메인 이미지">
+            </div>
+            <div class="main_txt_02">
+              <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000"><span>택스톡으로 <br>세금관리 쉽게 시작!</span></div>
+
+            </div>
+          </div>
+        </div>
+        <div class="r_cul">
+          <div class="r_cul_01">
+            <div class="r_cul_top_box">
+              <div class="r_cul_top_txt">
+                <div data-aos="fade-down" data-aos-delay="500" data-aos-duration="2000"><span>현재 나의 신용점수 조회하기</span></div>
+              </div>
+              <div class="r_cul_top_img">
+                <video src="./videos/search.webm" autoplay loop muted></video>
+              </div>
+            </div>
+          </div>
+          <div class="r_cul_02">
+            <div class="r_cul_02_headtxt">
+              <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000"><span>택스톡<br>금융 서비스</span></div>
+            </div>
+            <div class="r_cul_box">
+              <div class="top_txt_01">
+                <img src="./img/growth.png" alt="">
+                <span>원클릭 투자</span>
+                <p>한번의 클릭으로<br>모든 주식 관리</p>
+              </div>
+            </div>
+            <div class="r_cul_box">
+              <div class="top_txt_02">
+                <img src="./img/allinone.png" alt="">
+                <span>올인원 통장</span>
+                <p>모든은행의 통장<br>하나로 연동</p>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="center_txt">
+      <div data-aos="fade-up"><span>택스톡가 업무별 수수료는 유동적이며, 상담 후 정확한 견적을 안내드립니다.</span></div>
+    </div>
+
+    <div class="p_aos">
+      <div class="p_aos_txt">
+        <span>
+        고객님을 위한<br> 택스톡의 A to Z
+        </span>
+      </div>
+      <div class="t_aos">
+        <div class="aos_box">
+          <div class="img_box">
+            <div data-aos="fade-up" data-aos-duration="1000"><img src="./img/p_coin.jpg" alt="코인aos"></div>
+          </div>
+          <div class="txt_box">
+            <div data-aos="fade-up" data-aos-duration="1000"><span>소중한 가상화페, 내 디지털자산(Digital Assets) 관리를 효율적으로</span></div>
+            <div data-aos="fade-up" data-aos-duration="1000"><p>[글로벌 핀테크 및 금융 트렌드]</p></div>
+          </div>
+        </div>
+
+        <div class="aos_box">
+          <div class="img_box">
+            <div data-aos="fade-up" data-aos-duration="1000"><img src="./img/p_detail.jpg" alt="코인aos"></div>
+          </div>
+          <div class="txt_box">
+              <div data-aos="fade-up" data-aos-duration="1000"><span>정교한 시스템과 철저한 보안으로, 디지털 자산을 안정적으로 관리합니다.</span></div>
+            <div data-aos="fade-up" data-aos-duration="1000"><p>[글로벌 핀테크 및 금융 트렌드]</p></div>
+          </div>
+        </div>
+
+        <div class="aos_box">
+          <div class="img_box">
+            <div data-aos="fade-up" data-aos-duration="1000"><img src="./img/p_robot.jpg" alt="코인aos"></div>
+          </div>
+          <div class="txt_box">
+            <div data-aos="fade-up" data-aos-duration="1000"><span>다양하게 쌓아온 수많은 데이터로 AI가 자산관리를 도와드립니다.</span></div>
+            <div data-aos="fade-up" data-aos-duration="1000"><p>[글로벌 핀테크 및 금융 트렌드]</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="b_aos">
+        <div class="aos_box">
+          <div class="img_box">
+            <div data-aos="fade-up" data-aos-duration="1000"><img src="./img/p_tree.jpg" alt="코인aos"></div>
+          </div>
+          <div class="txt_box">
+            <div data-aos="fade-up" data-aos-duration="1000"><span>부담없는 착한 가격으로 고객 만족도 100%를 목표합니다.</span></div>
+            <div data-aos="fade-up" data-aos-duration="1000"><p>[글로벌 핀테크 및 금융 트렌드]</p></div>
+          </div>
+        </div>
+        <div class="aos_box">
+          <div class="img_box">
+            <div data-aos="fade-up" data-aos-duration="1000"><img src="./img/p_people.jpg" alt="코인aos"></div>
+          </div>
+          <div class="txt_box">
+            <div data-aos="fade-up" data-aos-duration="1000"><span>개인 &#xB7; 기업 가리지 않고 한분 한분 최선을 다해 돕겠습니다.</span></div>
+            <div data-aos="fade-up" data-aos-duration="1000"><p>[글로벌 핀테크 및 금융 트렌드]</p></div>
+          </div>
+        </div>
+        <div class="aos_box">
+          <div class="img_box">
+            <div data-aos="fade-up" data-aos-duration="1000"><img src="./img/p_contact.jpg" alt="코인aos"></div>
+          </div>
+          <div class="txt_box">
+            <div data-aos="fade-up" data-aos-duration="1000"><span>24시간 언제든 내 자산을 관리하고 체크할 수 있는 택스톡</span></div>
+            <div data-aos="fade-up" data-aos-duration="1000"><p>[글로벌 핀테크 및 금융 트렌드]</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    
+    <!-- <div class="sw_section">
+      <div class="sw_txt">
+        <span>헥토는 리뉴얼 택스 다양한 라이프 서비스를 통해 삶의 무한하나 가능성을 실현하고 있습니다.</span>
+      </div> -->
+
+      <div class="swiper mySwiper">
+        <div class="myswiper_txt">
+          <h1>내가 택한 TaxStock</h1>
+          <span>고객님의 최적화를 위해 노력합니다.</span>
+        </div>
+        <div class="swiper-wrapper">
+          <!-- 1번 -->
+          <div class="swiper-slide">
+            <div class="slide_box b_01">
+              <div class="video_box box_01">
+                <video src="./img/tax_selphone.webm" autoplay loop muted></video>
+              </div>
+              <div class="video_txt">
+                <span>"3초" One Click 환급신청</span>
+              </div>
+          </div>
+        </div>
+        <!-- 2번 -->
+          <div class="swiper-slide">
+            <div class="slide_box b_02">
+              <div class="video_box box_02">
+                <video src="./img/card.webm" autoplay loop muted></video>
+              </div>
+              <div class="video_txt">
+                <span>계좌 및 카드연동</span>
+              </div>  
+          </div>
+        </div>
+        <!-- 3번 -->
+          <div class="swiper-slide">
+            <div class="slide_box b_03">
+              <div class="video_box box_03">
+                <video src="./img/rotate_coin.webm" autoplay loop muted></video>
+              </div>
+              <div class="video_txt">
+                <span>가상화폐</span>
+              </div>  
+          </div>
+        </div>
+        <!-- 4번 -->
+          <div class="swiper-slide">
+            <div class="slide_box b_04">
+              <div class="video_box box_04">
+                <video src="./img/toss.webm" autoplay loop muted></video>
+              </div>
+              <div class="video_txt">
+                <span>24시간 실시간<br> 입&#xB7;출금</span>
+              </div>  
+          </div>
+        </div>
+        <!-- 5번 -->
+          <div class="swiper-slide">
+            <div class="slide_box b_05">
+              <div class="video_box box_05">
+                <video src="./img/invest.webm" autoplay loop muted></video>
+              </div>
+              <div class="video_txt">
+                <span>AI 상승주<br> 알아보기</span>
+              </div>  
+            </div>
+          </div>
+          <!-- 6번 -->
+          <div class="swiper-slide">
+            <div class="slide_box b_06">
+              <div class="video_box box_06">
+                <video src="./img/pro.webm" autoplay loop muted></video>
+              </div>
+              <div class="video_txt">
+                <span>전문가 상담</span>
+              </div>  
+          </div>
+        </div>
+        <!-- 7번 -->
+          <div class="swiper-slide">
+            <div class="slide_box b_07">
+              <div class="video_box box_07">
+                <video src="./img/tax_selphone.webm" autoplay loop muted></video>
+              </div>
+              <div class="video_txt">
+                <span>"3초" One Click 환급신청</span>
+              </div>
+          </div>
+        </div>
+        <!-- 8번 -->
+          <div class="swiper-slide">
+            <div class="slide_box b_08">
+              <div class="video_box box_08">
+                <video src="./img/card.webm" autoplay loop muted></video>
+              </div>
+              <div class="video_txt">
+                <span>계좌 및 카드연동</span>
+              </div>  
+          </div>
+        </div>
+        <!-- 9번 -->
+          <div class="swiper-slide">
+            <div class="slide_box b_09">
+              <div class="video_box box_09">
+                <video src="./img/rotate_coin.webm" autoplay loop muted></video>
+              </div>
+              <div class="video_txt">
+                <span>가상화폐</span>
+              </div>  
+          </div>
+        </div>
+        <!-- 10번 -->
+          <div class="swiper-slide">
+            <div class="slide_box b_10">
+              <div class="video_box box_10">
+                <video src="./img/toss.webm" autoplay loop muted></video>
+              </div>
+              <div class="video_txt">
+                <span>24시간 실시간<br> 입&#xB7;출금</span>
+              </div>  
+          </div>
+        </div>
+        <!-- 11번 -->
+          <div class="swiper-slide">
+            <div class="slide_box b_11">
+              <div class="video_box box_11">
+                <video src="./img/invest.webm" autoplay loop muted></video>
+              </div>
+              <div class="video_txt">
+                <span>AI 상승주<br> 알아보기</span>
+              </div>  
+            </div>
+          </div>
+          <!-- 12번 -->
+          <div class="swiper-slide">
+            <div class="slide_box b_12">
+              <div class="video_box box_12">
+                <video src="./img/pro.webm" autoplay loop muted></video>
+              </div>
+              <div class="video_txt">
+                <span>전문가 상담</span>
+              </div>  
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="tab_section">
+      <div class="tab_side">
+        <a href="#none" data-image="./img/building.jpg">1번입니다</a>
+        <a href="#none" data-image="./img/dollar.jpg">2번입니다</a>
+        <a href="#none" data-image="./img/hand.jpg">3번입니다</a>
+        <a href="#none" data-image="./img/building.jpg">4번입니다</a>
+        <a href="#none" data-image="./img/dollar.jpg">5번입니다</a>
+        <a href="#none" data-image="./img/hand.jpg">6번입니다</a>
+      </div>
+      <div class="tab_body"></div>
+    </div> -->
+    <div class="footer">
+    <div class="footer_top">
+      <div class="question">
+        <div class="q_txt">
+          <div class="q_txt_top">
+            <span>자주 묻는 질문</span>
+            <a href="#none"><p>더보기</p></a>
+          </div>
+          <div class="q_txt_bottom">
+            <span>궁굼한 점이 더 있으신가요?</span>
+          </div>
+        </div>
+        <div class="question_list">
+          <div class="q_list q01">
+            <div class="q_list_category"><span>결제내역문의</span></div>
+            <div class="q_list_main">
+              <i class="fa-solid fa-circle-question"></i>
+              <a href="#none"><span>주식에 사용하는 통장 비밀번호를 까먹었요.</span></a>
+            </div>
+            <div class="q_list_arrow">
+              <span>2025. 05. 15</span>
+            </div>
+          </div>
+          <div class="q_list q02">
+            <div class="q_list_category"><span>주식투자문의</span></div>
+            <div class="q_list_main">
+              <i class="fa-solid fa-circle-question"></i>
+              <a href="#none"><span>해외 주식 투자로 발생한 수익은 어떻게 신고하나요?</span></a>
+            </div>
+            <div class="q_list_arrow">
+              <span>2025. 05. 10</span>
+            </div>
+          </div>
+          <div class="q_list q03">
+            <div class="q_list_category"><span>연말정산문의</span></div>
+            <div class="q_list_main">
+              <i class="fa-solid fa-circle-question"></i>
+              <a href="#none"><span>연말정산 관리가 가능한가요?</span></a>
+            </div>
+            <div class="q_list_arrow">
+              <span>2025. 04. 29</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="notice">
+        <div class="notice_top">
+          <span>공지사항</span>
+          <a href="#none"><p>더보기</p></a>
+        </div>
+        <div class="notice_bottom">
+          <div class="notice_01">
+            <a href="#none"><span>톡스택 홈페이지 앱 이용약관 개정안내</span></a>
+            <p>2025. 3. 22</p>
+          </div>
+          <div class="notice_02">
+            <a href="#none"><span>배당소득세 원천징수 및 종합과세 안내</span></a>
+            <p>2025. 3. 22</p>
+          </div>
+          <div class="notice_03">
+            <a href="#none"><span>파생상품 및 비상장 주식 거래 시 세금 안내</span></a>
+            <p>2025. 3. 22</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer_bottom">
+      <div class="fb_left">
+        <div class="fb_01">
+          <span>개인정보처리방침</span>
+          <span>고객관리안내문</span>
+          <span>이용약관</span>
+          <span>지적재산권 및 법적한계</span>
+          <span>신용정보활용체제</span>
+          <span>이메일수집거부</span>
+        </div>
+        <div class="fb_02">
+          <div class="02_01"><span>택스톡 주식회사 | 사업자등록번호 178-12-559757 | 대표이사 홍길동</span></div>
+          <div class="02_02"><span>주소 02256 서울시 강남구 한남대로 352(한남동, 24 택스톡빌딩) | 대표번호 1588-2249</span></div>
+        </div>
+        <div class="fb_03"><div class="02_03"><span>&#x24B8; TaxStock. All Rights Reserved.</span></div></div>
+      </div>
+    </div>  
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script> 
+  AOS.init();
+  </script> 
+</body>
+</html>
